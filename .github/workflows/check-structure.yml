@@ -1,0 +1,64 @@
+name: Repo Structure & Markdown Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify required folders exist
+        run: |
+          required_dirs=(
+            "01-first-responder"
+            "02-evidence-collection"
+            "03-malware-analysis"
+            "04-timeline-analysis"
+            "05-final-report"
+          )
+          missing=0
+          for d in "${required_dirs[@]}"; do
+            if [ ! -d "$d" ]; then
+              echo "::error::Missing required directory: $d"
+              missing=1
+            fi
+          done
+          if [ "$missing" -eq 1 ]; then
+            exit 1
+          fi
+          echo "All required directories present."
+
+      - name: Verify key deliverable files exist
+        run: |
+          required_files=(
+            "README.md"
+            "tool-summary.md"
+            "01-first-responder/SOP.md"
+            "02-evidence-collection/chain-of-custody-form.md"
+            "03-malware-analysis/analysis-report.md"
+            "04-timeline-analysis/timeline_correlation.py"
+            "05-final-report/Investigation-Report.md"
+          )
+          missing=0
+          for f in "${required_files[@]}"; do
+            if [ ! -f "$f" ]; then
+              echo "::error::Missing required file: $f"
+              missing=1
+            fi
+          done
+          if [ "$missing" -eq 1 ]; then
+            exit 1
+          fi
+          echo "All required files present."
+
+      - name: Lint Markdown formatting
+        uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: '**/*.md'
+        continue-on-error: true

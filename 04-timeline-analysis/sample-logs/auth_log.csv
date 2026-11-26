@@ -1,0 +1,6 @@
+timestamp,event,user,source_ip,host
+2026-01-10T08:02:11Z,login_success,nurse_jsmith,10.0.2.15,HOSP-WS07
+2026-01-10T13:45:02Z,login_success,admin_temp,45.33.102.19,HOSP-FS01
+2026-01-10T13:47:30Z,usb_device_connected,admin_temp,,HOSP-FS01
+2026-01-10T13:52:10Z,login_failed,admin,10.0.2.15,HOSP-FS01
+2026-01-10T14:05:44Z,outbound_connection,admin_temp,185.220.101.7,HOSP-FS01

@@ -1,0 +1,11 @@
+timestamp_utc,source,details
+2026-01-10T08:02:11Z,auth_log,event=login_success; user=nurse_jsmith; source_ip=10.0.2.15; host=HOSP-WS07
+2026-01-10T13:30:05Z,browser_history,url=hxxp://malicious-update-portal[.]example/payload; host=HOSP-FS01
+2026-01-10T13:45:02Z,auth_log,event=login_success; user=admin_temp; source_ip=45.33.102.19; host=HOSP-FS01
+2026-01-10T13:47:30Z,auth_log,event=usb_device_connected; user=admin_temp; host=HOSP-FS01
+2026-01-10T13:52:10Z,auth_log,event=login_failed; user=admin; source_ip=10.0.2.15; host=HOSP-FS01
+2026-01-10T14:05:44Z,auth_log,event=outbound_connection; user=admin_temp; source_ip=185.220.101.7; host=HOSP-FS01
+2026-01-10T14:06:02Z,file_activity_log,event=file_modified; file_path=D:\PatientRecords\records_2025.db; host=HOSP-FS01
+2026-01-10T14:06:05Z,file_activity_log,event=file_created; file_path=D:\PatientRecords\records_2025.db.omega; host=HOSP-FS01
+2026-01-10T14:06:40Z,file_activity_log,event=file_created; file_path=D:\README_RECOVER.txt; host=HOSP-FS01
+2026-01-10T14:08:12Z,file_activity_log,event=mass_file_rename; file_path=D:\Billing\*.omega; host=HOSP-FS01

@@ -1,0 +1,5 @@
+timestamp,event,file_path,host
+2026-01-10T14:06:02Z,file_modified,D:\PatientRecords\records_2025.db,HOSP-FS01
+2026-01-10T14:06:05Z,file_created,D:\PatientRecords\records_2025.db.omega,HOSP-FS01
+2026-01-10T14:06:40Z,file_created,D:\README_RECOVER.txt,HOSP-FS01
+2026-01-10T14:08:12Z,mass_file_rename,D:\Billing\*.omega,HOSP-FS01

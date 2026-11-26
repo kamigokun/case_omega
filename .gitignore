@@ -1,0 +1,4 @@
+02-evidence-collection/acquired-image/*
+!02-evidence-collection/acquired-image/.gitkeep
+*.img
+*.E01
