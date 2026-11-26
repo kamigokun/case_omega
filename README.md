@@ -1,7 +1,7 @@
 # Case Omega: Investigating a Ransomware Attack on a Healthcare Network
 
 **Course:** Unit 3 – Investigation of Cyber Crimes
-**Student:** Amit Mohanty | Roll No: 2301730325
+**Student:** Harshit Rawat | Roll No: 2301730305
 
 ## Scenario
 A fictional hospital's IT infrastructure (file server + staff workstations) was hit
